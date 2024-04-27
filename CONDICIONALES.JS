@@ -23,7 +23,10 @@ console.log("EJERCICIO 2");
 let qualification1 = prompt("ingrese calificacion del primer trimestre");
 let qualification2 = prompt("ingrese calificacion del segundo trimestre");
 let qualification3 = prompt("ingrese calificacion del tercer trimestre");
-let avarage = (qualification1*1)/3 + (qualification2*1)/3 + (qualification3*1) / 3;
+let avarage =
+  (qualification1 * 1) / 3 +
+  (qualification2 * 1) / 3 +
+  (qualification3 * 1) / 3;
 console.log(avarage);
 if (avarage <= 5) {
   console.log("SUSPENDIDO");
@@ -39,18 +42,20 @@ console.log("EJERCICIO 3");
 //  pues, se le dirige a la barra de comida
 
 let bebida = prompt("Que bebida quiere: vino / cerveza / refresco / agua");
-if(bebida==="vino"||"cerveza" ||"refresco" ||"agua") {console.log("Dirijase a la barra ");}
-else{console.log("Dirijase a la barra de comida ");}
-
+if (bebida === "Vino" || "Cerveza" || "Refresco" || "Agua") {
+  alert("Dirijase a la barra ");
+} else {
+  alert("Dirijase a la barra de comida ");
+}
 
 console.log("EJERCICIO 4");
 // - El usuario tecleará dos números. Debes devolver por consolación, la diferencia entre el mayor y el menor.
 // Ej.: Si el usuario ingresa 5 y 8, el programa devolverá 3.... (8-5=3). Utiliza TERNARIO, es decir, la forma  cond ? verdadero : falso
 
-let num1 = prompt("teclee el primer numero");
-let num2 = prompt("teclee el segundo numero");
+let num1 = prompt("Teclee el primer numero");
+let num2 = prompt("Teclee el segundo numero");
 
-console.log(num1>num2?num1-num2:num2-num1); 
+console.log(num1 > num2 ? num1 - num2 : num2 - num1);
 
 console.log("EJERCICIO 5");
 // El usuario debe ingresar dos datos: un número y su cuadrado. Si es correcto el programa enviará un mensaje de acierto en caso contrario
@@ -58,6 +63,12 @@ console.log("EJERCICIO 5");
 // Ej.: Si teclea 3 y 9 el resultado es Correcto. Si teclea 3 y 8, el resultado será Error. Se creativo con los mensajes ; )
 
 let number1 = prompt("Ingrese un numero ");
-let number2 = prompt("Ingrese el resultado del anterior numero elevado al cuadrado ");
+let number2 = prompt(
+  "Ingrese el resultado del anterior numero elevado al cuadrado "
+);
 
-number2==number1**2? alert("resultado correcto FELICIDADES"): alert("Que burro eres");
+number2 == number1 ** 2
+  ? alert("Resultado correcto FELICIDADES ")
+  : alert(
+      "Creo que el numero ingresado fue muy alto para tu capacidad de calculo"
+    );
