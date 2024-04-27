@@ -47,7 +47,17 @@ console.log("EJERCICIO 4");
 // - El usuario tecleará dos números. Debes devolver por consolación, la diferencia entre el mayor y el menor.
 // Ej.: Si el usuario ingresa 5 y 8, el programa devolverá 3.... (8-5=3). Utiliza TERNARIO, es decir, la forma  cond ? verdadero : falso
 
+let num1 = prompt("teclee el primer numero");
+let num2 = prompt("teclee el segundo numero");
+
+console.log(num1>num2?num1-num2:num2-num1); 
+
 console.log("EJERCICIO 5");
 // El usuario debe ingresar dos datos: un número y su cuadrado. Si es correcto el programa enviará un mensaje de acierto en caso contrario
 //  dirá que se produjo un error. Utiliza TERNARIO, es decir, la forma  cond ? verdadero Falso
 // Ej.: Si teclea 3 y 9 el resultado es Correcto. Si teclea 3 y 8, el resultado será Error. Se creativo con los mensajes ; )
+
+let number1 = prompt("Ingrese un numero ");
+let number2 = prompt("Ingrese el resultado del anterior numero elevado al cuadrado ");
+
+number2==number1**2? alert("resultado correcto FELICIDADES"): alert("Que burro eres");
