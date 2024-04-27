@@ -38,6 +38,11 @@ console.log("EJERCICIO 3");
 // para ello el cliente puede pedir vino, cerveza, refresco, agua. Si pide una cerveza o vino se le dirige a la barra y si no,
 //  pues, se le dirige a la barra de comida
 
+let bebida = prompt("Que bebida quiere: vino / cerveza / refresco / agua");
+if(bebida==="vino"||"cerveza" ||"refresco" ||"agua") {console.log("Dirijase a la barra ");}
+else{console.log("Dirijase a la barra de comida ");}
+
+
 console.log("EJERCICIO 4");
 // - El usuario tecleará dos números. Debes devolver por consolación, la diferencia entre el mayor y el menor.
 // Ej.: Si el usuario ingresa 5 y 8, el programa devolverá 3.... (8-5=3). Utiliza TERNARIO, es decir, la forma  cond ? verdadero : falso
