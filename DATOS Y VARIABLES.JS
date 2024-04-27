@@ -69,6 +69,5 @@ let priceIva = price + Iva;
 
 console.log("precio Introducido:" + price);
 console.log("El IVA del producto es:" + Iva);
-console.log(priceIva);
 
-console.error(`El total a pagar es de:${priceIva}`);
+alert(`El total a pagar es de:${priceIva}`);
