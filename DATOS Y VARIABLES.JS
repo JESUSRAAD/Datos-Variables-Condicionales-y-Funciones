@@ -65,7 +65,7 @@ let price = prompt(
   "Ingrese el monto del producto o servicio al cual se le va a sumar el IVA "
 );
 let Iva = (21 * price) / 100;
-let priceIva = price + Iva;
+let priceIva = (price*1) + Iva;
 
 console.log("precio Introducido:" + price);
 console.log("El IVA del producto es:" + Iva);

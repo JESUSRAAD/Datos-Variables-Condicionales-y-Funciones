@@ -5,11 +5,11 @@ console.log("EJERCICIO 1");
 // Ej. 75 km en 2 horas ó 120 km en 3 horas. (siempre, números enteros). Si recorre 100 km en 4 horas,
 //  ha ido a una velocidad de 100/4 que son 25 km/h. Estaría descalificada.
 
-let distance = prompt("ingrese longitud del tramo de la via ");
+let distance = prompt("Ingrese longitud del tramo de la via ");
 let time = prompt("Ingrese el tiempo empleado en horas enteras");
 let speed = distance / time;
- console.log(speed+"km/h");
-if (speed > 40 && speed < 60) {
+console.log(speed + "km/h");
+if (speed >= 40 && speed < 60) {
   console.log("El conductor aprueba");
 } else {
   console.log("Conductor descalificado");
@@ -19,6 +19,19 @@ console.log("EJERCICIO 2");
 // - Crea un programa que pide la nota de un estudiante en los tres trimestres del curso y calcula la nota promedio
 // (Solicita tres números en tres entradas distintas). El resultado que dará será "SUSPENDIDO" si la media es menor de 5,
 //  "APROBADO" si está entre 5 y 7 y "NOTABLE" por encima de 7.
+
+let qualification1 = prompt("ingrese calificacion del primer trimestre");
+let qualification2 = prompt("ingrese calificacion del segundo trimestre");
+let qualification3 = prompt("ingrese calificacion del tercer trimestre");
+let avarage = (qualification1*1)/3 + (qualification2*1)/3 + (qualification3*1) / 3;
+console.log(avarage);
+if (avarage <= 5) {
+  console.log("SUSPENDIDO");
+} else if (avarage > 5 && avarage <= 7) {
+  console.log("APROBADO");
+} else {
+  console.log("NOTABLE");
+}
 
 console.log("EJERCICIO 3");
 // - Este ejercicio le indicará a los clientes que se dirijan a la barra de bebidas oa la de comidas,
