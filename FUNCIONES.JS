@@ -142,8 +142,6 @@ function result(imcLet) {
     return "Obesidad";
   }
 }
-console.log(weight);
-console.log(height);
 
 console.log(
   "Su Indice de Masa Corporal es: " + imc(weight, height).toFixed(2) + "kg/m²"
