@@ -42,7 +42,12 @@ console.log("EJERCICIO 3");
 //  pues, se le dirige a la barra de comida
 
 let bebida = prompt("Que bebida quiere: vino / cerveza / refresco / agua");
-if (bebida === "Vino" || "Cerveza" || "Refresco" || "Agua") {
+if (
+  bebida === "Vino" ||
+  bebida === "Cerveza" ||
+  bebida === "Refresco" ||
+  bebida === "Agua"
+) {
   alert("Dirijase a la barra ");
 } else {
   alert("Dirijase a la barra de comida ");

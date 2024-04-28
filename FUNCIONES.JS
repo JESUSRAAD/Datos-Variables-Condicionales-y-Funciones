@@ -55,21 +55,25 @@ let side1 = prompt("Primer lado del triangulo");
 let side2 = prompt("Segundo lado del triangulo");
 let side3 = prompt("Tercero lado del triangulo");
 
-function triangle(type) {
-  switch (type) {
-    case (parseInt(side1) == parseInt(side2)) == parseInt(side3):
-      console.log("Triangulo equilatero");
-      break;
-    case parseInt(side1) == parseInt(side2) ||
-      parseInt(side1) == parseInt(side3) ||
-      parseInt(side2) == parseInt(side3):
-      console.log("Triangulo isósceles");
-      break;
-    case (parseInt(side1) != parseInt(side2)) != parseInt(side3):
-      console.log("Triangulo escaleno");
+function type(side1, side2, side3) {
+  if (
+    parseInt(side1) == parseInt(side3) &&
+    parseInt(side2) == parseInt(side1)
+  ) {
+    console.log("Triangulo equilatero");
+  } else if (
+    parseInt(side1) == parseInt(side2) ||
+    parseInt(side1) == parseInt(side3) ||
+    parseInt(side2) == parseInt(side3)
+  ) {
+    console.log("Triangulo isósceles");
+  } else if ((parseInt(side1) != parseInt(side2)) != parseInt(side3)) {
+    console.log("Triangulo escaleno");
+  } else {
+    console.log(undefined);
   }
 }
-triangle(type);
+type(side1, side2, side3);
 
 console.log("EJERCICIO 4");
 // .- Subimos el nivel?... crea un programa que simule una calculadora con funciones para realizar operaciones matemáticas básicas.
@@ -94,7 +98,7 @@ function calculator(operator, b, c) {
       break;
     case "/":
       console.log(parseInt(b) / parseInt(c));
-
+      break;
     default:
       console.log(undefined);
   }
@@ -118,3 +122,30 @@ console.log("EJERCICIO 5");
 
 // Por ejemplo, calcular IMC(70, 1,75) debería devolver "Normal".
 // Recuerde redondear el IMC a dos decimales.
+
+let weight = parseFloat(prompt("Cuanto pesas en kilogramos "));
+let height = parseFloat(prompt("Cuanto mides en metros "));
+
+function imc(weight, height) {
+  return weight / height ** 2;
+}
+
+let imcLet = imc(weight, height);
+function result(imcLet) {
+  if (imcLet < 18.5) {
+    return "Bajo peso";
+  } else if (imcLet >= 18.5 && imcLet <= 24.9) {
+    return "Normal";
+  } else if (imcLet >= 25 && imcLet <= 29.9) {
+    return "Sobrepeso";
+  } else {
+    return "Obesidad";
+  }
+}
+console.log(weight);
+console.log(height);
+
+console.log(
+  "Su Indice de Masa Corporal es: " + imc(weight, height).toFixed(2) + "kg/m²"
+);
+console.log(result(imcLet));
